@@ -1,5 +1,26 @@
 # Raspberry Pi Pico W Home Assistant Starter Project Using `arduino-pico`
 
+## Fork Notes
+
+This fork contains the small changes required to make this build specifically
+on my machine (an Ubuntu box) in 2022/09. These changes include:
+
+* Changing to the standard raspberrypi platform.
+* Using the arduino framework.
+* Adding the Wire lib_dep, along with the base Adafruit requirements.
+* Switch the upload port to a path.
+
+Currently this requires manually editing platformio.ini to use your `$USER` instead of mine, which can probably be fixed.
+
+### TODO
+
+* [✔] Make it build minimally on Linux (for me)
+* [ ] Make it build miniamlly on Linux (for anyone)
+* [ ] Add a selection mechanism so that it'll also build for the original author's machine.
+* [ ] Delete these fork notes and make proper readme modifications.
+
+## Original Description
+
 I'm pretty excited about Pico W: it's such a reliable, high-quality board and each one costs just $6 (if you can find one).
 
 I'm building an IoT project with Pico W and Home Assistant, and it took weeks of research and experimentation to figure out the basics of integration of all the necessary components. This starter pulls together everything I've learned so you can get to building quickly.
